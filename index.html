@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مزاج · قهوة مختصة في جدة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand"><span data-i18n="brand-main">مزاج</span><small>MAZAJ</small></a>
+    <nav>
+      <a href="#menu" data-i18n="nav-menu">المنيو</a>
+      <a href="#about" data-i18n="nav-about">عن مزاج</a>
+      <a href="#visit" data-i18n="nav-visit">زورونا</a>
+    </nav>
+    <div class="toggles">
+      <button id="theme-toggle" class="icon-btn" type="button" data-i18n-aria="aria-theme-toggle" aria-label="تبديل المظهر">
+        <span data-theme-icon>☀</span>
+      </button>
+      <button id="lang-toggle" class="icon-btn lang-btn" type="button" data-i18n-aria="aria-lang-toggle" aria-label="تبديل اللغة">EN</button>
+    </div>
+    <a href="https://wa.me/966501234567?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D8%A7%D8%B7%D9%84%D8%A8%20%D9%85%D9%86%20%D9%85%D8%B2%D8%A7%D8%AC" class="call" target="_blank" rel="noopener" data-i18n="cta-whatsapp">اطلب واتساب</a>
+  </div>
+</header>
+
+<!-- الواجهة -->
+<div class="hero" id="top">
+  <svg class="lattice" aria-hidden="true"><defs>
+    <pattern id="rawshan" width="66" height="66" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#D6A93B" stroke-width="1">
+        <path d="M33 0 L66 33 L33 66 L0 33 Z"/>
+        <circle cx="33" cy="33" r="12"/>
+        <path d="M0 0 L66 66 M66 0 L0 66" stroke-opacity=".35"/>
+      </g>
+    </pattern></defs>
+    <rect width="100%" height="100%" fill="url(#rawshan)"/>
+  </svg>
+  <div class="glow"></div>
+
+  <div class="hero-inner wrap">
+    <svg class="steam" viewBox="0 0 74 64" aria-hidden="true">
+      <path d="M22 58 C16 46 30 42 24 30 C20 22 26 14 22 6"/>
+      <path d="M37 58 C31 44 45 40 39 27 C35 18 41 12 37 4"/>
+      <path d="M52 58 C46 46 60 42 54 30 C50 22 56 14 52 6"/>
+    </svg>
+    <h1 data-i18n="brand-main">مزاج</h1>
+    <div class="rule"><span></span><b data-i18n="hero-tagline">قهوة مختصة · جدة</b><span></span></div>
+    <p data-i18n="hero-desc">كل فنجان له وقته. اختر مزاجك — بارد يفتح النهار، أو ساخن يطوّل الجلسة.</p>
+    <div class="cta">
+      <a href="#menu" class="btn btn-fill" data-i18n="cta-browse-menu">تصفّح المنيو</a>
+      <a href="#visit" class="btn btn-ghost" data-i18n="cta-find-us">وين نلقاكم؟</a>
+    </div>
+  </div>
+</div>
+
+<div class="ticker">
+  <div class="wrap">
+    <span data-i18n="ticker-hours">نفتح يومياً <b>٧ ص — ٢ ف</b></span>
+    <span data-i18n="ticker-roast">حبوب محمّصة <b>كل ٣ أيام</b></span>
+    <span data-i18n="ticker-location">حي الشاطئ · <b>جدة</b></span>
+  </div>
+</div>
+
+<!-- المنيو -->
+<section id="menu">
+  <div class="wrap">
+    <div class="head">
+      <h2 data-i18n="menu-title">المنيو</h2>
+      <p data-i18n="menu-desc">كل المشروبات تنحضّر بحبوب مختصة من محمصتنا، والحليب يتبدّل لوز أو شوفان بدون فرق في السعر إلا ٤ ريال.</p>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="cold" id="t-cold" data-i18n="tab-cold">مشروبات باردة</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="hot" id="t-hot" data-i18n="tab-hot">مشروبات ساخنة</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="sweet" id="t-sweet" data-i18n="tab-sweet">يروق معها</button>
+    </div>
+
+    <!-- باردة -->
+    <div class="panel" role="tabpanel" id="cold" aria-labelledby="t-cold">
+      <div class="grid">
+        <div class="item"><div class="line"><span class="nm" data-i18n="cold1-name">سبانيش لاتيه بالتمر<span class="tag">الأكثر طلباً</span></span><span class="dots"></span><span class="pr">25<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="cold1-desc">حليب مكثف مع دبس تمر سكري ولمسة هيل.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="cold2-name">آيس سبانيش لاتيه</span><span class="dots"></span><span class="pr">21<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="cold2-desc">إسبريسو مزدوج على حليب مكثف بارد.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="cold3-name">كولد برو</span><span class="dots"></span><span class="pr">20<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="cold3-desc">منقوع ١٦ ساعة — حموضة هادية وقوام ناعم.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="cold4-name">آيس لاتيه</span><span class="dots"></span><span class="pr">18<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="cold4-desc">الكلاسيكي، بحليب طازج وثلج مضغوط.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="cold5-name">آيس أمريكانو</span><span class="dots"></span><span class="pr">15<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="cold5-desc">إسبريسو وماء بارد فقط — خفيف وصافي.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="cold6-name">آيس V60</span><span class="dots"></span><span class="pr">22<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="cold6-desc">تقطير على ثلج، من حبوب إثيوبية فاكهية.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="cold7-name">آيس ماتشا لاتيه</span><span class="dots"></span><span class="pr">24<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="cold7-desc">ماتشا يابانية درجة احتفالية.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="cold8-name">موكا مثلجة</span><span class="dots"></span><span class="pr">23<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="cold8-desc">شوكولاتة داكنة ٧٠٪ مع إسبريسو.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="cold9-name">ليموناضة نعناع</span><span class="dots"></span><span class="pr">16<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="cold9-desc">ليمون طازج يُعصر عند الطلب.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="cold10-name">آيس تي خوخ<span class="tag new">جديد</span></span><span class="dots"></span><span class="pr">17<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="cold10-desc">شاي أسود بارد مع خوخ وحبق.</p></div>
+      </div>
+    </div>
+
+    <!-- ساخنة -->
+    <div class="panel" role="tabpanel" id="hot" aria-labelledby="t-hot" hidden>
+      <div class="grid">
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot1-name">قهوة عربية</span><span class="dots"></span><span class="pr">14<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot1-desc">تُقدّم بدلّة صغيرة مع تمرتين.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot2-name">إسبريسو</span><span class="dots"></span><span class="pr">12<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot2-desc">شوت واحد، خلطة مزاج الداكنة.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot3-name">مكياتو</span><span class="dots"></span><span class="pr">14<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot3-desc">إسبريسو بلمسة رغوة حليب.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot4-name">كورتادو</span><span class="dots"></span><span class="pr">16<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot4-desc">نصف إسبريسو ونصف حليب — متوازن.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot5-name">فلات وايت<span class="tag">الأكثر طلباً</span></span><span class="dots"></span><span class="pr">18<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot5-desc">قوام حريري وطعم قهوة واضح.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot6-name">كابتشينو</span><span class="dots"></span><span class="pr">18<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot6-desc">رغوة كثيفة ورسمة على السطح.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot7-name">لاتيه</span><span class="dots"></span><span class="pr">18<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot7-desc">حليب أكثر، مرارة أقل.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot8-name">سبانيش لاتيه</span><span class="dots"></span><span class="pr">21<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot8-desc">حلو ودافئ بحليب مكثف.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot9-name">في ٦٠ (تقطير)</span><span class="dots"></span><span class="pr">22<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot9-desc">اسأل الباريستا عن حبوب اليوم.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot10-name">أمريكانو</span><span class="dots"></span><span class="pr">14<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot10-desc">إسبريسو مطوّل بماء ساخن.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot11-name">موكا</span><span class="dots"></span><span class="pr">22<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot11-desc">شوكولاتة بلجيكية مع كريمة خفيفة.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot12-name">ماتشا لاتيه</span><span class="dots"></span><span class="pr">24<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot12-desc">دافئة وكريمية بدون كافيين قوي.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot13-name">شاي كرك</span><span class="dots"></span><span class="pr">10<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot13-desc">مغلي على الطريقة الهندية بالهيل والزعفران.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="hot14-name">شاي أخضر بالنعناع</span><span class="dots"></span><span class="pr">12<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="hot14-desc">أوراق كاملة ونعناع طازج.</p></div>
+      </div>
+    </div>
+
+    <!-- حلا -->
+    <div class="panel" role="tabpanel" id="sweet" aria-labelledby="t-sweet" hidden>
+      <div class="grid">
+        <div class="item"><div class="line"><span class="nm" data-i18n="sweet1-name">تشيز كيك التمر</span><span class="dots"></span><span class="pr">25<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="sweet1-desc">قاعدة تمر وسكري وجبنة كريمية.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="sweet2-name">سان سباستيان</span><span class="dots"></span><span class="pr">26<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="sweet2-desc">محروقة من فوق، سائلة من داخل.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="sweet3-name">كوكيز شوكولاتة</span><span class="dots"></span><span class="pr">14<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="sweet3-desc">تُخبز مرتين في اليوم.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="sweet4-name">كرواسون زعتر وجبن</span><span class="dots"></span><span class="pr">16<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="sweet4-desc">يناسب فطور الصباح مع أمريكانو.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="sweet5-name">كيكة عسل</span><span class="dots"></span><span class="pr">22<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="sweet5-desc">طبقات رقيقة وقشدة خفيفة.</p></div>
+        <div class="item"><div class="line"><span class="nm" data-i18n="sweet6-name">تمر محشي بالمكسرات</span><span class="dots"></span><span class="pr">18<i data-i18n="curr">ر.س</i></span></div><p class="desc" data-i18n="sweet6-desc">٦ حبات — يقدّم مع القهوة العربية.</p></div>
+      </div>
+    </div>
+
+    <div class="extras">
+      <span class="chip" data-i18n="extra1">شوت إسبريسو إضافي <b>+٥</b></span>
+      <span class="chip" data-i18n="extra2">حليب لوز أو شوفان <b>+٤</b></span>
+      <span class="chip" data-i18n="extra3">نكهة فانيلا أو كراميل <b>+٣</b></span>
+      <span class="chip" data-i18n="extra4">كريمة مخفوقة <b>+٤</b></span>
+      <span class="chip" data-i18n="extra5">تكبير الحجم <b>+٥</b></span>
+    </div>
+
+    <!-- توصية الباريستا -->
+    <div class="feature">
+      <div class="txt">
+        <h3 data-i18n="feature-title">مزاج الحجاز</h3>
+        <p data-i18n="feature-desc">تركيبة البيت: إسبريسو من حبوب يمنية، حليب مكثف بدبس التمر، ورشة هيل مطحون طازج فوق الرغوة. يتقدّم بارد أو ساخن — والباريستا يوصي بالبارد بعد العصر.</p>
+        <div class="price" data-i18n="feature-price">٢٧ <span style="font-size:.8rem;color:var(--stone-dim)">ر.س</span></div>
+      </div>
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 200 200" fill="none" stroke="#D6A93B" stroke-width="2.5" stroke-linecap="round">
+          <path d="M52 72h84v52a34 34 0 0 1-34 34H86a34 34 0 0 1-34-34V72Z"/>
+          <path d="M136 84h16a20 20 0 0 1 0 40h-16"/>
+          <path d="M40 176h120"/>
+          <path d="M84 52c-5-9 6-13 1-23M104 52c-5-9 6-13 1-23M124 52c-5-9 6-13 1-23" opacity=".7"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- عن مزاج -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="head" style="margin-bottom:22px"><h2 data-i18n="about-title">القهوة عندنا مزاج، مو عادة</h2></div>
+      <p data-i18n="about-p1">بدأنا بمحمصة صغيرة في حي الشاطئ سنة ٢٠٢١، وفكرة واحدة: إن الفنجان الزين ما يحتاج تعقيد، يحتاج حبوب طازجة وباريستا يعرف وش يسوي.</p>
+      <p data-i18n="about-p2">نجيب حبوبنا مباشرة من مزارع في اليمن وإثيوبيا وكولومبيا، ونحمّصها على دفعات صغيرة كل ثلاثة أيام. وأي مشروب على المنيو تقدر تعدّله على مزاجك بدون حرج.</p>
+    </div>
+    <div class="facts">
+      <div class="fact" data-i18n="fact1"><b>٣ أيام</b><span>أقصى عمر للتحميصة قبل ما تنزل للبار</span></div>
+      <div class="fact" data-i18n="fact2"><b>٤ مصادر</b><span>مزارع نتعامل معها بشكل مباشر</span></div>
+      <div class="fact" data-i18n="fact3"><b>١٩ ساعة</b><span>نفتح فيها يومياً بدون إجازة أسبوعية</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- زورونا -->
+<section id="visit">
+  <div class="wrap">
+    <div class="head"><h2 data-i18n="visit-title">زورونا</h2></div>
+    <div class="visit">
+      <div class="cell">
+        <h4 data-i18n="visit-loc-title">الموقع</h4>
+        <p data-i18n="visit-loc-desc">شارع الأمير سلطان، حي الشاطئ<br>جدة، المملكة العربية السعودية</p>
+        <a class="map-btn" href="https://maps.google.com/?q=Prince+Sultan+Street+Al+Shati+Jeddah" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+          <span data-i18n="visit-map-btn">افتح في خرائط جوجل</span>
+        </a>
+      </div>
+      <div class="cell">
+        <h4 data-i18n="visit-hours-title">أوقات العمل</h4>
+        <p data-i18n="visit-hours-desc">السبت — الخميس: ٧ ص — ٢ ف<br>الجمعة: ١ ظ — ٢ ف</p>
+      </div>
+      <div class="cell">
+        <h4 data-i18n="visit-contact-title">تواصل معنا</h4>
+        <p data-i18n="visit-contact-desc"><a href="tel:+966501234567">٠٥٠١ ٢٣٤ ٥٦٧</a><br><a href="https://instagram.com/mazaj.jed" target="_blank" rel="noopener">إنستقرام: mazaj.jed@</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand" data-i18n="brand-main">مزاج</div>
+    <p data-i18n="footer-tagline">خذ وقتك. القهوة ما تستعجل.</p>
+
+    <div class="social-row">
+      <a href="https://instagram.com/mazaj.jed" target="_blank" rel="noopener" data-i18n-aria="aria-instagram" aria-label="إنستقرام">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      </a>
+      <a href="https://snapchat.com/add/mazaj.jed" target="_blank" rel="noopener" data-i18n-aria="aria-snapchat" aria-label="سناب شات">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c3 0 5 2.2 5 5.2 0 1.4.1 2.6.6 3.4.4.7 1.1 1 1.9 1.2-.2.9-1.3 1.5-2.3 1.8.1.6.2 1.1-.3 1.4-.6.4-1.7.2-2.4.6-.7.4-1.3 1.4-2.5 1.4s-1.8-1-2.5-1.4c-.7-.4-1.8-.2-2.4-.6-.5-.3-.4-.8-.3-1.4-1-.3-2.1-.9-2.3-1.8.8-.2 1.5-.5 1.9-1.2.5-.8.6-2 .6-3.4C7 5.2 9 3 12 3Z"/></svg>
+      </a>
+      <a href="https://x.com/mazaj_jed" target="_blank" rel="noopener" data-i18n-aria="aria-x" aria-label="اكس">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l16 16M20 4 4 20"/></svg>
+      </a>
+      <a href="https://tiktok.com/@mazaj.jed" target="_blank" rel="noopener" data-i18n-aria="aria-tiktok" aria-label="تيك توك">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 4v9.5a3.5 3.5 0 1 1-3-3.46"/><path d="M15 4c.3 2 1.7 3.4 3.7 3.7"/></svg>
+      </a>
+    </div>
+
+    <div class="deliver-row">
+      <a href="https://www.hungerstation.com" target="_blank" rel="noopener" data-i18n="deliver1">اطلب عبر هنقرستيشن</a>
+      <a href="https://www.jahez.net" target="_blank" rel="noopener" data-i18n="deliver2">اطلب عبر جاهز</a>
+      <a href="https://www.talabat.com/saudi-arabia" target="_blank" rel="noopener" data-i18n="deliver3">اطلب عبر طلبات</a>
+    </div>
+
+    <div class="pay-row">
+      <span>مدى</span><span>Visa</span><span>Mastercard</span><span>Apple Pay</span><span>STC Pay</span>
+    </div>
+
+    <div class="legal">
+      <p data-i18n="legal1"><b>السجل التجاري:</b> 4030512987 &nbsp;·&nbsp; <b>الرقم الضريبي:</b> 300123456700003</p>
+      <p data-i18n="legal2">مقهى مزاج للتجارة العامة — جدة، المملكة العربية السعودية</p>
+      <p class="note" data-i18n="legal3">الأسعار شاملة ضريبة القيمة المضافة، وقابلة للتغيير دون إشعار مسبق.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/966501234567?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D8%A7%D8%B7%D9%84%D8%A8%20%D9%85%D9%86%20%D9%85%D8%B2%D8%A7%D8%AC" target="_blank" rel="noopener" data-i18n-aria="aria-whatsapp-fab" aria-label="اطلب عبر واتساب">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.1c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.6 12.7-12.6C28.7 8.6 23 3 16 3Zm0 22.9c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.2 1.2-4-.3-.4a10.2 10.2 0 0 1-1.6-5.4C5.4 9.7 10.1 5 16 5c5.9 0 10.6 4.7 10.6 10.6S21.9 25.9 16 25.9Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6 0-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.1.8.3 1.4.6 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4Z"/></svg>
+</a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
